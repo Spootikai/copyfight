@@ -1,5 +1,6 @@
 {
   "version": "0.0.0",
+  "set": "nrt",
   "card": [
     {
       "set_id": "nrt_001",
