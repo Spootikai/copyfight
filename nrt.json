@@ -6,7 +6,7 @@
       "set_id": "nrt_001",
       "spoiler": 1,
       "title": "Naruto, Knucklehead Ninja",
-      "description": "[u]Entrance[/u]: Create a {nrt_token_0}.",
+      "description": "[u]Entrance[/u]: Create a {nrt_token_001}.",
       "attributes": {
           "health":2,
           "attack":2,
@@ -37,9 +37,9 @@
       ]
     },
     {
-      "set_id": "nrt_001_token_001",
+      "set_id": "nrt_token_001",
       "title": "Shadow Clone",
-      "description": "[u]Death[/u]: You may return a target {nrt_0} to your hand.",
+      "description": "[u]Death[/u]: You may return a target {nrt_001} to your hand.",
       "attributes": {
           "health":1,
           "attack":1,
@@ -64,7 +64,7 @@
             "parameter": [
               "target",
               "ally",
-              "nrt_0"
+              "nrt_001"
             ]
           }
         }
