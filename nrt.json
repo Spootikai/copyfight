@@ -1,0 +1,73 @@
+{
+  "version": "0.0.0",
+  "card": [
+    {
+      "set_id": "nrt_001",
+      "spoiler": 1,
+      "title": "Naruto, Knucklehead Ninja",
+      "description": "[u]Entrance[/u]: Create a {nrt_token_0}.",
+      "attributes": {
+          "health":2,
+          "attack":2,
+          "cost":0,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      },
+      "behavior":[
+        {
+          "listener": {
+            "type": "on_create",
+            "parameter": [
+              "self"
+            ]
+          },
+          "function": {
+            "type": "create",
+            "parameter": [
+              "nrt_token_0"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "set_id": "nrt_001_token_001",
+      "title": "Shadow Clone",
+      "description": "[u]Death[/u]: You may return a target {nrt_0} to your hand.",
+      "attributes": {
+          "health":1,
+          "attack":1,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      },
+      "behavior":[
+        {
+          "listener": {
+            "type": "on_death",
+            "parameter": [
+              "self"
+            ]
+          },
+          "function": {
+            "type": "return",
+            "parameter": [
+              "target",
+              "ally",
+              "nrt_0"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
