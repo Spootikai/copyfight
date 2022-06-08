@@ -1,9 +1,8 @@
 {
   "version": "0.0",
   "set": "nrt",
-  "card": [
-    {
-      "set_id": "nrt_001",
+  "card": {
+    "nrt_001": {
       "spoiler": 1,
       "title": "Naruto, Knucklehead Ninja",
       "description": "[u]Entrance[/u]: Create a {nrt_token_001}.",
@@ -36,8 +35,7 @@
         }
       ]
     },
-    {
-      "set_id": "nrt_token_001",
+    "nrt_token_001": {
       "title": "Shadow Clone",
       "description": "[u]Death[/u]: You may return a target {nrt_001} to your hand.",
       "attributes": {
@@ -70,5 +68,5 @@
         }
       ]
     }
-  ]
+  }
 }
