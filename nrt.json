@@ -9,7 +9,7 @@
       "attributes": {
           "health":2,
           "attack":2,
-          "cost":0,
+          "cost":1,
           "keywords": [
           ],
           "type": [
@@ -67,6 +67,74 @@
           }
         }
       ]
-    }
+    },
+    "nrt_002": {
+      "spoiler": 1,
+      "title": "Sasuke Uchiha",
+      "description": "[center]",
+      "attributes": {
+          "health":3,
+          "attack":1,
+          "cost":2,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+    },
+    "nrt_003": {
+      "spoiler": 1,
+      "title": "Rock Lee",
+      "description": "[center]",
+      "attributes": {
+          "health":1,
+          "attack":3,
+          "cost":3,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+    },
+    "nrt_004": {
+      "spoiler": 1,
+      "title": "Kakashi Hatake",
+      "description": "[center]",
+      "attributes": {
+          "health":4,
+          "attack":4,
+          "cost":4,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+      },
+      "nrt_005": {
+        "spoiler": 1,
+        "title": "Itachi Uchiha",
+        "description": "[center]",
+        "attributes": {
+            "health":8,
+            "attack":3,
+            "cost":5,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      }
   }
 }
