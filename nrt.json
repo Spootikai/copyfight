@@ -118,23 +118,74 @@
             "shinobi"
           ]
       }
-      },
-      "nrt_005": {
-        "spoiler": 1,
-        "title": "Itachi Uchiha",
-        "description": "[center]",
-        "attributes": {
-            "health":8,
-            "attack":3,
-            "cost":5,
-            "keywords": [
-            ],
-            "type": [
-              "creature",
-              "human",
-              "shinobi"
-            ]
-        }
+    },
+    "nrt_005": {
+      "spoiler": 1,
+      "title": "Itachi Uchiha",
+      "description": "[center]",
+      "attributes": {
+          "health":8,
+          "attack":3,
+          "cost":5,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
       }
+    },
+    "nrt_006": {
+      "spoiler": 1,
+      "title": "Zabuza Momochi",
+      "description": "[center]",
+      "attributes": {
+          "health":5,
+          "attack":5,
+          "cost":4,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+    },
+    "nrt_007": {
+      "spoiler": 1,
+      "title": "Sakura Haruno",
+      "description": "[center]",
+      "attributes": {
+          "health":2,
+          "attack":2,
+          "cost":2,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+    },
+    "nrt_008": {
+      "spoiler": 1,
+      "title": "Neji Hyuuga",
+      "description": "[center]",
+      "attributes": {
+          "health":3,
+          "attack":3,
+          "cost":2,
+          "keywords": [
+          ],
+          "type": [
+            "creature",
+            "human",
+            "shinobi"
+          ]
+      }
+    },
   }
 }
