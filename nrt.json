@@ -187,5 +187,21 @@
           ]
       }
     },
+    "nrt_009": {
+    "spoiler": 1,
+    "title": "George Bush",
+    "description": "[center]",
+    "attributes": {
+        "health":11,
+        "attack":9,
+        "cost":2,
+        "keywords": [
+        ],
+        "type": [
+          "creature",
+          "human",
+          "shinobi"
+        ]
+    }
   }
 }
