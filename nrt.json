@@ -189,8 +189,8 @@
     },
     "nrt_009": {
     "spoiler": 1,
-    "title": "George Bush.",
-    "description": "[center]",
+    "title": "George Bush",
+    "description": "[center]Theres no denying it, george",
     "attributes": {
         "health":11,
         "attack":9,
@@ -200,7 +200,7 @@
         "type": [
           "creature",
           "human",
-          "shinobi"
+          "abomination
         ]
       }
     }
