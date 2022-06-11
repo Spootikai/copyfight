@@ -1,208 +1,208 @@
 {
-  "version": "0.0",
-  "set": "nrt",
-  "card": {
-    "nrt_001": {
-      "spoiler": 1,
-      "title": "Naruto, Knucklehead Ninja",
-      "description": "[center]Entrance: Create a Shadow Clone.",
-      "attributes": {
-          "health":2,
-          "attack":2,
-          "cost":1,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      },
-      "behavior":[
-        {
-          "listener": {
-            "type": "on_create",
-            "parameter": [
-              "self"
+    "version": "0.0",
+    "set": "nrt",
+    "card": {
+      "nrt_001": {
+        "spoiler": 1,
+        "title": "Naruto, Knucklehead Ninja",
+        "description": "[center]Entrance: Create a Shadow Clone.",
+        "attributes": {
+            "health":2,
+            "attack":2,
+            "cost":1,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
             ]
-          },
-          "function": {
-            "type": "create",
-            "parameter": [
-              "nrt_token_0"
-            ]
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_create",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "create",
+              "parameter": [
+                "nrt_token_0"
+              ]
+            }
           }
-        }
-      ]
-    },
-    "nrt_token_001": {
-      "title": "Shadow Clone",
-      "description": "[center]Death: You may return a target Naruto, Knucklehead Ninja to your hand.",
-      "attributes": {
-          "health":1,
-          "attack":1,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      },
-      "behavior":[
-        {
-          "listener": {
-            "type": "on_death",
-            "parameter": [
-              "self"
-            ]
-          },
-          "function": {
-            "type": "return",
-            "parameter": [
-              "target",
-              "ally",
-              "nrt_001"
-            ]
-          }
-        }
-      ]
-    },
-    "nrt_002": {
-      "spoiler": 1,
-      "title": "Sasuke Uchiha",
-      "description": "[center]",
-      "attributes": {
-          "health":3,
-          "attack":1,
-          "cost":2,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_003": {
-      "spoiler": 1,
-      "title": "Rock Lee",
-      "description": "[center]",
-      "attributes": {
-          "health":1,
-          "attack":3,
-          "cost":3,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_004": {
-      "spoiler": 1,
-      "title": "Kakashi Hatake",
-      "description": "[center]",
-      "attributes": {
-          "health":4,
-          "attack":4,
-          "cost":4,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_005": {
-      "spoiler": 1,
-      "title": "Itachi Uchiha",
-      "description": "[center]",
-      "attributes": {
-          "health":8,
-          "attack":3,
-          "cost":5,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_006": {
-      "spoiler": 1,
-      "title": "Zabuza Momochi",
-      "description": "[center]",
-      "attributes": {
-          "health":5,
-          "attack":5,
-          "cost":4,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_007": {
-      "spoiler": 1,
-      "title": "Sakura Haruno",
-      "description": "[center]",
-      "attributes": {
-          "health":2,
-          "attack":2,
-          "cost":2,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_008": {
-      "spoiler": 1,
-      "title": "Neji Hyuuga",
-      "description": "[center]",
-      "attributes": {
-          "health":3,
-          "attack":3,
-          "cost":2,
-          "keywords": [
-          ],
-          "type": [
-            "creature",
-            "human",
-            "shinobi"
-          ]
-      }
-    },
-    "nrt_009": {
-    "spoiler": 1,
-    "title": "George Bush",
-    "description": "[center]Theres no denying it, george",
-    "attributes": {
-        "health":11,
-        "attack":9,
-        "cost":2,
-        "keywords": [
-        ],
-        "type": [
-          "creature",
-          "human",
-          "abomination"
         ]
+      },
+      "nrt_token_001": {
+        "title": "Shadow Clone",
+        "description": "[center]Death: You may return a target Naruto, Knucklehead Ninja to your hand.",
+        "attributes": {
+            "health":1,
+            "attack":1,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_death",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "return",
+              "parameter": [
+                "target",
+                "ally",
+                "nrt_001"
+              ]
+            }
+          }
+        ]
+      },
+      "nrt_002": {
+        "spoiler": 1,
+        "title": "Sasuke Uchiha",
+        "description": "[center]",
+        "attributes": {
+            "health":3,
+            "attack":1,
+            "cost":2,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_003": {
+        "spoiler": 1,
+        "title": "Rock Lee",
+        "description": "[center]",
+        "attributes": {
+            "health":1,
+            "attack":3,
+            "cost":3,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_004": {
+        "spoiler": 1,
+        "title": "Kakashi Hatake",
+        "description": "[center]",
+        "attributes": {
+            "health":4,
+            "attack":4,
+            "cost":4,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_005": {
+        "spoiler": 1,
+        "title": "Itachi Uchiha",
+        "description": "[center]",
+        "attributes": {
+            "health":8,
+            "attack":3,
+            "cost":5,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_006": {
+        "spoiler": 1,
+        "title": "Zabuza Momochi",
+        "description": "[center]",
+        "attributes": {
+            "health":5,
+            "attack":5,
+            "cost":4,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_007": {
+        "spoiler": 1,
+        "title": "Sakura Haruno",
+        "description": "[center]",
+        "attributes": {
+            "health":2,
+            "attack":2,
+            "cost":2,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_008": {
+        "spoiler": 1,
+        "title": "Neji Hyuuga",
+        "description": "[center]",
+        "attributes": {
+            "health":3,
+            "attack":3,
+            "cost":2,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human",
+              "shinobi"
+            ]
+        }
+      },
+      "nrt_009": {
+        "spoiler": 1,
+        "title": "George Bush",
+        "description": "[center]You can't deny it any longer, george.",
+        "attributes": {
+            "health":11,
+            "attack":9,
+            "cost":100,
+            "keywords": [
+            ],
+            "type": [
+              "creature",
+              "human"
+            ]
+        }
       }
     }
-  }
 }
+  
