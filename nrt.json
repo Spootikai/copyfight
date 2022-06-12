@@ -186,22 +186,6 @@
               "shinobi"
             ]
         }
-      },
-      "nrt_009": {
-        "spoiler": 1,
-        "title": "George Bush",
-        "description": "[center]You can't deny it any longer, george.",
-        "attributes": {
-            "health":11,
-            "attack":9,
-            "cost":100,
-            "keywords": [
-            ],
-            "type": [
-              "creature",
-              "human"
-            ]
-        }
       }
     }
 }
