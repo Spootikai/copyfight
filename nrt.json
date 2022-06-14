@@ -11,6 +11,7 @@
             "attack":2,
             "cost":1,
             "keywords": [
+              "trigger_entrance"
             ],
             "type": [
               "creature",
@@ -42,6 +43,7 @@
             "health":1,
             "attack":1,
             "keywords": [
+              "trigger_death"
             ],
             "type": [
               "creature",
@@ -77,6 +79,7 @@
             "attack":3,
             "cost":2,
             "keywords": [
+              "trigger_damaged"
             ],
             "type": [
               "creature",
@@ -94,6 +97,7 @@
             "attack":2,
             "cost":3,
             "keywords": [
+              "trigger_strike"
             ],
             "type": [
               "creature",
@@ -105,12 +109,13 @@
       "nrt_004": {
         "spoiler": 1,
         "title": "Kakashi Hatake",
-        "description": "[center]When an ally recieves combat damage, Kakashi strikes the attacker.",
+        "description": "[center]All allies have +0|+1",
         "attributes": {
             "health":4,
             "attack":4,
             "cost":5,
             "keywords": [
+              "gank"
             ],
             "type": [
               "creature",
@@ -146,6 +151,7 @@
             "attack":2,
             "cost":4,
             "keywords": [
+              "trigger_entrance",
               "double_strike"
             ],
             "type": [
@@ -164,6 +170,7 @@
             "attack":2,
             "cost":2,
             "keywords": [
+              "trigger_strike"
             ],
             "type": [
               "creature",
@@ -181,6 +188,7 @@
             "attack":2,
             "cost":2,
             "keywords": [
+              "gank"
             ],
             "type": [
               "creature",
