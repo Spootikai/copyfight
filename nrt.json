@@ -71,10 +71,10 @@
       "nrt_002": {
         "spoiler": 1,
         "title": "Sasuke Uchiha",
-        "description": "[center]",
+        "description": "[center]Damaged: Gain First Strike",
         "attributes": {
             "health":3,
-            "attack":1,
+            "attack":3,
             "cost":2,
             "keywords": [
             ],
@@ -88,10 +88,10 @@
       "nrt_003": {
         "spoiler": 1,
         "title": "Rock Lee",
-        "description": "[center]",
+        "description": "[center]Strike: gain +1|+1",
         "attributes": {
-            "health":1,
-            "attack":3,
+            "health":2,
+            "attack":2,
             "cost":3,
             "keywords": [
             ],
@@ -105,11 +105,11 @@
       "nrt_004": {
         "spoiler": 1,
         "title": "Kakashi Hatake",
-        "description": "[center]",
+        "description": "[center]When an ally recieves combat damage, Kakashi strikes the attacker.",
         "attributes": {
             "health":4,
             "attack":4,
-            "cost":4,
+            "cost":5,
             "keywords": [
             ],
             "type": [
@@ -122,12 +122,13 @@
       "nrt_005": {
         "spoiler": 1,
         "title": "Itachi Uchiha",
-        "description": "[center]",
+        "description": "[center]Itachi Uchiha gains attack equal to his opponent until end of turn.",
         "attributes": {
-            "health":8,
+            "health":3,
             "attack":3,
             "cost":5,
             "keywords": [
+              "first_strike"
             ],
             "type": [
               "creature",
@@ -139,12 +140,13 @@
       "nrt_006": {
         "spoiler": 1,
         "title": "Zabuza Momochi",
-        "description": "[center]",
+        "description": "[center]Entrance: Strike the weakest enemy.",
         "attributes": {
-            "health":5,
-            "attack":5,
+            "health":4,
+            "attack":2,
             "cost":4,
             "keywords": [
+              "double_strike"
             ],
             "type": [
               "creature",
@@ -156,7 +158,7 @@
       "nrt_007": {
         "spoiler": 1,
         "title": "Sakura Haruno",
-        "description": "[center]",
+        "description": "[center]Strike: heal all lane allies 1.",
         "attributes": {
             "health":2,
             "attack":2,
@@ -173,10 +175,10 @@
       "nrt_008": {
         "spoiler": 1,
         "title": "Neji Hyuuga",
-        "description": "[center]",
+        "description": "[center]Neji does not exhaust after combat.",
         "attributes": {
-            "health":3,
-            "attack":3,
+            "health":2,
+            "attack":2,
             "cost":2,
             "keywords": [
             ],
