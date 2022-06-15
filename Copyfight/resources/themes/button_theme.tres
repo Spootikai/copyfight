@@ -1,0 +1,37 @@
+[gd_resource type="Theme" load_steps=10 format=2]
+
+[ext_resource path="res://resources/fonts/Poppins-Medium.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="StyleBoxFlat" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=23]
+
+[sub_resource type="StyleBoxEmpty" id=19]
+
+[sub_resource type="Gradient" id=20]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0.0823529 )
+
+[sub_resource type="GradientTexture" id=21]
+gradient = SubResource( 20 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = SubResource( 21 )
+region_rect = Rect2( 0, 0, 2048, 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 1 )
+
+[resource]
+default_font = SubResource( 1 )
+Button/colors/font_color = Color( 1, 1, 1, 0.392157 )
+Button/colors/font_color_focus = Color( 1, 1, 1, 1 )
+Button/colors/font_color_hover = Color( 1, 1, 1, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/styles/disabled = SubResource( 6 )
+Button/styles/focus = SubResource( 7 )
+Button/styles/hover = SubResource( 23 )
+Button/styles/normal = SubResource( 19 )
+Button/styles/pressed = SubResource( 22 )
