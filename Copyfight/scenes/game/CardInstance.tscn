@@ -1,0 +1,164 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://resources/shaders/corner_round.gdshader" type="Shader" id=1]
+[ext_resource path="res://assets/textures/art_template.png" type="Texture" id=2]
+[ext_resource path="res://scenes/game/CardInstance.gd" type="Script" id=3]
+[ext_resource path="res://assets/textures/symbol.png" type="Texture" id=4]
+[ext_resource path="res://assets/textures/art_mask.png" type="Texture" id=5]
+[ext_resource path="res://assets/textures/card_template.png" type="Texture" id=6]
+[ext_resource path="res://resources/themes/card_title.tres" type="Theme" id=7]
+[ext_resource path="res://resources/themes/card_description.tres" type="Theme" id=8]
+[ext_resource path="res://resources/themes/large_general.tres" type="Theme" id=9]
+[ext_resource path="res://resources/themes/cost.tres" type="Theme" id=10]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.035
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.035
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.05
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.035
+
+[node name="CardInstance" type="Node2D"]
+script = ExtResource( 3 )
+combat_color = Color( 1.5, 0.8, 0, 1 )
+trigger_color = Color( 0, 0.75, 1.5, 1 )
+static_color = Color( 0.5, 1.5, 0, 1 )
+
+[node name="Template" type="Sprite" parent="."]
+self_modulate = Color( 0.313726, 0.313726, 0.313726, 1 )
+material = SubResource( 2 )
+texture = ExtResource( 6 )
+
+[node name="Shadow" type="Sprite" parent="Template"]
+modulate = Color( 0, 0, 0, 0.188235 )
+show_behind_parent = true
+material = SubResource( 3 )
+texture = ExtResource( 6 )
+offset = Vector2( 50, 50 )
+
+[node name="Symbol" type="Sprite" parent="Template"]
+scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 4 )
+
+[node name="Revealed" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Revealed"]
+material = SubResource( 4 )
+position = Vector2( 0, -325 )
+texture = ExtResource( 2 )
+
+[node name="Mask" type="Sprite" parent="Revealed"]
+modulate = Color( 0, 0, 0, 1 )
+material = SubResource( 5 )
+texture = ExtResource( 5 )
+
+[node name="Cost" type="Label" parent="Revealed"]
+margin_top = -700.0
+margin_right = 450.0
+margin_bottom = -476.0
+theme = ExtResource( 10 )
+custom_constants/shadow_offset_x = 8
+custom_constants/shadow_offset_y = 8
+align = 2
+
+[node name="Title" type="Label" parent="Revealed"]
+margin_left = -450.0
+margin_top = -700.0
+margin_right = 450.0
+margin_bottom = -200.0
+mouse_filter = 1
+theme = ExtResource( 7 )
+custom_constants/shadow_offset_x = 8
+custom_constants/shadow_offset_y = 8
+text = "Example Card Title"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Description" type="RichTextLabel" parent="Revealed"]
+margin_left = -450.0
+margin_top = 125.0
+margin_right = 450.0
+margin_bottom = 575.0
+mouse_filter = 1
+theme = ExtResource( 8 )
+bbcode_enabled = true
+bbcode_text = "[center]Lorem ipsum dolor sit amet. Quo internos sunt et sapiente fuga hic pariatur minima."
+meta_underlined = false
+text = "Lorem ipsum dolor sit amet. Quo internos sunt et sapiente fuga hic pariatur minima."
+
+[node name="Control" type="Control" parent="Revealed"]
+margin_left = -500.0
+margin_top = 500.0
+margin_right = 500.0
+margin_bottom = 700.0
+mouse_filter = 1
+theme = ExtResource( 7 )
+
+[node name="Power" type="Label" parent="Revealed/Control"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -40.0
+margin_right = 500.0
+margin_bottom = 100.0
+mouse_filter = 1
+text = "???"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="Tough" type="Label" parent="Revealed/Control"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -500.0
+margin_top = -40.0
+margin_bottom = 100.0
+mouse_filter = 1
+text = "???"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="KeywordContainer" type="CenterContainer" parent="Revealed"]
+margin_left = -500.0
+margin_top = -64.0
+margin_right = 500.0
+margin_bottom = 64.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Revealed/KeywordContainer"]
+margin_left = 500.0
+margin_top = 64.0
+margin_right = 500.0
+margin_bottom = 64.0
+
+[node name="MulliganLabel" type="Label" parent="."]
+visible = false
+margin_left = -500.0
+margin_top = 700.0
+margin_right = 500.0
+margin_bottom = 950.0
+theme = ExtResource( 9 )
+text = "MULLIGAN"
+align = 1
+valign = 1

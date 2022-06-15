@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/shaders/corner_round.gdshader" type="Shader" id=1]
+[ext_resource path="res://scenes/game/EntityInstance.gd" type="Script" id=2]
+[ext_resource path="res://assets/textures/art_template.png" type="Texture" id=3]
+[ext_resource path="res://resources/themes/entity_stats.tres" type="Theme" id=4]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.05
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 1 )
+shader_param/radius = 1.0
+shader_param/animate = false
+shader_param/square_scale = 0.05
+
+[node name="EntityInstance" type="Node2D" groups=["entity"]]
+script = ExtResource( 2 )
+exhaust_color = Color( 0.627451, 0.627451, 0.627451, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1.1, 1.1, 1.1, 1 )
+material = SubResource( 2 )
+texture = ExtResource( 3 )
+
+[node name="Shadow" type="Sprite" parent="Sprite"]
+modulate = Color( 0, 0, 0, 0.188235 )
+show_behind_parent = true
+material = SubResource( 3 )
+position = Vector2( 50, 50 )
+texture = ExtResource( 3 )
+
+[node name="Stats" type="Control" parent="."]
+margin_left = -500.0
+margin_top = 125.0
+margin_right = 500.0
+margin_bottom = 375.0
+theme = ExtResource( 4 )
+
+[node name="StatAttack" type="RichTextLabel" parent="Stats"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -125.0
+margin_right = 500.0
+margin_bottom = 125.0
+bbcode_enabled = true
+bbcode_text = "[center]???[/center]"
+text = "???"
+scroll_active = false
+
+[node name="StatHealth" type="RichTextLabel" parent="Stats"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -500.0
+margin_top = -125.0
+margin_bottom = 125.0
+bbcode_enabled = true
+bbcode_text = "[center]???[/center]"
+text = "???"
+scroll_active = false
