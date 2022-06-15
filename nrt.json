@@ -30,7 +30,7 @@
             "function": {
               "type": "create",
               "parameter": [
-                "nrt_token_0"
+                "nrt_token_001"
               ]
             }
           }
@@ -62,8 +62,6 @@
             "function": {
               "type": "return",
               "parameter": [
-                "target",
-                "ally",
                 "nrt_001"
               ]
             }
@@ -86,7 +84,23 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_damaged",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "gain_keyword",
+              "parameter": [
+                "first_strike"
+              ]
+            }
+          }
+        ]
       },
       "nrt_003": {
         "spoiler": 1,
@@ -104,7 +118,24 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_strike",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "gain",
+              "parameter": [
+                1,
+                1
+              ]
+            }
+          }
+        ]
       },
       "nrt_004": {
         "spoiler": 1,
@@ -122,7 +153,24 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "global",
+              "parameter": [
+                "allies"
+              ]
+            },
+            "function": {
+              "type": "aura",
+              "parameter": [
+                0,
+                1
+              ]
+            }
+          }
+        ]
       },
       "nrt_005": {
         "spoiler": 1,
@@ -140,7 +188,24 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_combat",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "gain_temp",
+              "parameter": [
+                -1,
+                0
+              ]
+            }
+          }
+        ]
       },
       "nrt_006": {
         "spoiler": 1,
@@ -159,7 +224,23 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_create",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "strike",
+              "parameter": [
+                "weakest"
+              ]
+            }
+          }
+        ]
       },
       "nrt_007": {
         "spoiler": 1,
@@ -177,7 +258,23 @@
               "human",
               "shinobi"
             ]
-        }
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "on_strike",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "heal",
+              "parameter": [
+                "ally_lane"
+              ]
+            }
+          }
+        ]
       },
       "nrt_008": {
         "spoiler": 1,
@@ -196,7 +293,23 @@
               "shinobi"
             ]
         }
-      }
+      },
+      "behavior":[
+        {
+          "listener": {
+            "type": "end_combat",
+            "parameter": [
+              "self"
+            ]
+          },
+          "function": {
+            "type": "state_change",
+            "parameter": [
+              1
+            ]
+          }
+        }
+      ]
     }
 }
   
