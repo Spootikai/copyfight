@@ -292,24 +292,24 @@
               "human",
               "shinobi"
             ]
-        }
-      },
-      "behavior":[
-        {
-          "listener": {
-            "type": "end_combat",
-            "parameter": [
-              "self"
-            ]
-          },
-          "function": {
-            "type": "state_change",
-            "parameter": [
-              1
-            ]
+        },
+        "behavior":[
+          {
+            "listener": {
+              "type": "end_combat",
+              "parameter": [
+                "self"
+              ]
+            },
+            "function": {
+              "type": "state_change",
+              "parameter": [
+                1
+              ]
+            }
           }
-        }
-      ]
+        ]
+      }
     }
 }
   
